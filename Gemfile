@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
+gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
+gem 'active_model_serializers', '~> 0.10.9'
 gem 'pry'
 gem 'pry-nav'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '1.3.13'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

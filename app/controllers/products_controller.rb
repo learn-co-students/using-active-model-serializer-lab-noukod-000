@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+
   def index
     @products = Product.all
   end
@@ -16,7 +17,6 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
   end
-
   def create
     Product.create(product_params)
     redirect_to products_path
@@ -25,8 +25,8 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
     respond_to do |format|
-      format.html { render :show }
-      format.json { render json: @product.to_json(only: [:id, :name, :description, :price, :inventory])}
+      format.html {render :show}
+     format.json {render json: @product, status: 200}
     end
   end
 
